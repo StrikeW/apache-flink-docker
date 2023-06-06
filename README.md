@@ -35,14 +35,14 @@ docker-compose ps
 The result should be similar to the below
 
 ```
-Name                      Command               State                Ports              
+Name                      Command               State                Ports
 -----------------------------------------------------------------------------------------------
-flink_jobmanager_1    /docker-entrypoint.sh jobm ...   Up      6123/tcp, 0.0.0.0:8081->8081/tcp
-flink_sql-client_1    /docker-entrypoint.sh            Up      6123/tcp, 8081/tcp              
-flink_taskmanager_1   /docker-entrypoint.sh task ...   Up      6123/tcp, 8081/tcp              
+flink_jobmanager_1    /docker-entrypoint.sh jobm ...   Up      6123/tcp, 0.0.0.0:8088->8088/tcp
+flink_sql-client_1    /docker-entrypoint.sh            Up      6123/tcp, 8081/tcp
+flink_taskmanager_1   /docker-entrypoint.sh task ...   Up      6123/tcp, 8081/tcp
 ```
 
-Apache Flink Web UI is now available at `localhost:8081`
+Apache Flink Web UI is now available at `localhost:8088`
 
 ![Flink Web UI](img/flink-web-ui.png)
 
@@ -120,8 +120,8 @@ Command history file path: /root/.flink-sql-history
                   ░▓██▒                          ▓░  ▒█▓█  ░░▒▒▒
                       ▒▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▓▓  ▓░▒█░
 
-    ______ _ _       _       _____  ____  _         _____ _ _            _  BETA   
-   |  ____| (_)     | |     / ____|/ __ \| |       / ____| (_)          | |  
+    ______ _ _       _       _____  ____  _         _____ _ _            _  BETA
+   |  ____| (_)     | |     / ____|/ __ \| |       / ____| (_)          | |
    | |__  | |_ _ __ | | __ | (___ | |  | | |      | |    | |_  ___ _ __ | |_
    |  __| | | | '_ \| |/ /  \___ \| |  | | |      | |    | | |/ _ \ '_ \| __|
    | |    | | | | | |   <   ____) | |__| | |____  | |____| | |  __/ | | | |_
